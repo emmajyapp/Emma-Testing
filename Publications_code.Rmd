@@ -1,0 +1,72 @@
+---
+title: "Wordpress Publications Page"
+author: "Emma Yapp"
+date: "2024-08-09"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#Load relevant packages
+library(htmltools)
+```
+
+
+```{css, echo=FALSE}
+.wp-block-details {
+  background-color: #f0f8ff; /* Light blue background */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  padding: 10px; /* Padding inside the block */
+  border-radius: 5px; /* Rounded corners */
+}
+```
+
+## Contents of Team Publications
+
+This is how the block will look for the team, the blocks are clickable so that they can be minimised.
+
+```{r, echo=FALSE}
+
+# Define the HTML block for team publications
+html_content <- HTML('
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" open="">
+    <summary><strong>Project publications</strong></summary>
+    <p>
+    <ul>
+    <li>Publication 1 test</li>
+    <li>Natasha Routledge chapter?</li>
+    </ul>
+    </p>
+</details>
+')
+
+html_content
+
+```
+
+## Hannah K Richards
+
+This is an example of an actual one; can add hyperlinks within the code.
+
+```{r, echo=FALSE}
+
+# Define the HTML block for team publications, including hyperlinks
+html_content <- HTML('
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" open="">
+    <summary><strong>Hannah K Richards</strong></summary>
+    <p>
+    <ul>
+    <li><a href="https://www.cambridge.org/core/journals/review-of-international-studies/article/coming-of-age-within-implosion/AA089AC21525967CD9E1F5B7ED76A407"> Bendfeldt L, Clifford E, Richards H., 2024. Coming of age within ‘implosion.’ Review of International Studies, 50(3), pp.441-456. https://doi.org/10.1017/S0260210524000226</a></li>
+    </ul>
+    </p>
+</details>
+')
+
+html_content
+
+```
+
+## This is just a mock up for now!
+
+I like the bullet point format, but can adjust as we see fit. 
