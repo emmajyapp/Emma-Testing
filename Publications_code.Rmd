@@ -5,6 +5,17 @@ date: "2024-08-09"
 output: html_document
 ---
 
+```{r, include=FALSE}
+
+# Hi Emma, 
+# just add this code block of comments as additional code to your .rmd file. In a new branch in my local repo.
+# from here I am going to commit and then push this new branch to your repo, but then I am going to create a pull request.
+# have not done it before so hopefully it makes sense.
+# Nate
+
+```
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
